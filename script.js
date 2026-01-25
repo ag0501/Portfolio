@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .querySelector(this.getAttribute('href'))
         .scrollIntoView({ behavior: 'smooth' });
     });
-  });
+  }); 
 
   // Certification toggle logic
   const listItems = document.querySelectorAll('.cert-list li');
