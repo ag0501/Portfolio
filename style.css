@@ -42,3 +42,44 @@ footer { background:#0176d3; color:white; padding:20px; }
 .slide-in { animation:slideIn 2s; }
 @keyframes fadeIn { from{opacity:0} to{opacity:1} }
 @keyframes slideIn { from{transform:translateY(20px);opacity:0} to{transform:none;opacity:1} }
+
+
+#certifications {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.cert-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.cert-list li {
+  padding: 10px 15px;
+  border-bottom: 3px solid transparent;
+  font-weight: 600;
+}
+
+.cert-list li.active {
+  border-color: #0176d3;
+  color: #0176d3;
+}
+
+.cert-display {
+  margin-top: 30px;
+}
+
+.cert-img {
+  display: none;
+  width: 100%;
+  max-width: 800px;
+}
+
+.cert-img.active {
+  display: block;
+}
