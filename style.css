@@ -83,3 +83,31 @@ footer { background:#0176d3; color:white; padding:20px; }
 .cert-img.active {
   display: block;
 }
+
+.cert-badges {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 70px;   /* 👈 pushes badges below navbar */
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.cert-badges img {
+  width: 90px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-badges img:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+
+footer {
+  background: #0176d3;
+  color: white;
+  padding: 20px;
+  text-align: center;   /* 👈 centers text */
+}
